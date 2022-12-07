@@ -1,0 +1,40 @@
+extends base.pug
+
+block scripts
+    script(src='../static/js/dropdown.js')
+    link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous")
+
+block style 
+    style 
+        include ../static/style/homestyle.css
+        include ../static/style/dropdown.css
+
+block content
+    div#container
+        div#heading
+            | Clubs
+        div#crousel
+            ul 
+                li #[a(href='/club1') Club 1 ]
+                li #[a(href='/club2') Club 2 ]
+                li #[a(href='/club3') Club 3 ]
+                li #[a(href='/club4') Club 4 ]
+    div#container
+        div#heading
+            | Counclis
+        div#crousel
+            ul 
+                li #[a(href='/council1') Council 1 ]
+                li #[a(href='/council2') Council 2 ]
+                li #[a(href='/council3') Council 3 ]
+                li #[a(href='/council4') Council 4 ]
+    div#container
+        div#heading
+            | Wiki
+        div#crousel
+    div#container
+        div#heading
+            | Chat
+        div#crousel
+
+            

@@ -1,0 +1,45 @@
+doctype html 
+html 
+    head 
+        title InfoIITGN 
+        link(rel="stylesheet", href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css")
+        block style 
+        block scripts 
+    body 
+    div#notch
+        nav#navbar 
+            .profile-details(onclick="menuToggle()")
+                img(src=`static/img/zaqi.webp`, alt="")
+                span.admin_name Zaqi Momin
+                i.bx.bx-chevron-down 
+            .action
+                .menu
+                    h3
+                        | Someone Something
+                        br
+                        span Website Designer
+                    ul
+                        li
+                            img(src='static/img/dropdown/profile.png')
+                            a(href='#') My Profile
+                        li
+                            img(src='static/img/dropdown/edit.png')
+                            a(href='#') Edit Profile
+                        li
+                            img(src='static/img/dropdown/inbox.png')
+                            a(href='#') Inbox
+                        li
+                            img(src='static/img/dropdown/settings.png')
+                            a(href='#') Settings
+                        li
+                            img(src='static/img/dropdown/help.png')
+                            a(href='#') Help
+                        li
+                            img(src='static/img/dropdown/logout.png')
+                            a(href='#') Logout
+        div#title
+            | InfoIITGN 
+
+    block content
+    footer#footer
+        |Copywrite 2022 © iitgn.ac.in | All right reserved

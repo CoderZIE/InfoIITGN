@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Palette+Mosaic&family=Style+Script&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather", serif;
+}
+
+#navbar {
+  background-color: transparent;
+  padding: 13px 14px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#notch {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 150px;
+  width: 100%;
+  background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+#title {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  height: inherit;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+}
+
+#container {
+  background-color: #2c5364;
+  margin: 40px 20px;
+  border-radius: 10px;
+}
+
+#container #heading {
+  padding: 5px 20px;
+  font-size: large;
+  color: white;
+  border-radius: 10px 10px 0px 0px;
+  background-color: olive;
+}
+
+#container #crousel {
+  background-color: aqua;
+}
+
+#navbar .profile-details {
+  display: flex;
+  align-items: center;
+  background: #f5f6fa;
+  border: 2px solid #efeef1;
+  border-radius: 6px;
+  height: 50px;
+  min-width: 190px;
+  padding: 0 15px 0 2px;
+}
+#navbar .profile-details:hover {
+  cursor: pointer;
+}
+#navbar .profile-details img {
+  height: 40px;
+  width: 40px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+#navbar .profile-details .admin_name {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  margin: 0 10px;
+  white-space: nowrap;
+}
+#navbar .profile-details i {
+  font-size: 25px;
+  color: #333;
+}
+.action .menu ul li img {
+  max-width: 20px;
+  margin-right: 10px;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.action .menu ul li:hover img {
+  opacity: 1;
+}
+.action .menu ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: 0.5s;
+}
+#footer {
+  height: 40px;
+  width: 100%;
+  background-color: #0f2027;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0%;
+}
